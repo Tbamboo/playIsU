@@ -1,0 +1,141 @@
+    /*======日历calendarCtrl   modifyCalendar  Begin======*/
+
+    .modify-calendar {     
+      .modify-calendar-week {
+        padding: 0 10px;
+        background: #f8f8f8;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+        ul li {
+          line-height: 20px;
+        }
+      }
+    }
+    .modify-calendar-week ul, .calendar-day-ul {
+      // margin: 0;
+      padding: 0;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+  }
+  .modify-calendar-week ul li, .calendar-day-ul li {
+    float: left;
+    list-style: none;
+    -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      -moz-box-flex: 1;
+      -moz-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      display: block;
+      width: 100%;
+  }
+
+    #modifyCalendar .modify-calendar-info {
+        padding: 0 10px;
+    }
+
+    #modifyCalendar .modify-calendar-info .calendar-info-month {
+        padding: 12px 0;
+        text-align: center;
+    }
+
+    #modifyCalendar .modify-calendar-info .calendar-info-month span {
+        font-size: 16px;
+    }
+
+    #modifyCalendar .modify-calendar-info .calendar-info-day {
+    }
+
+    #modifyCalendar .modify-calendar-info .calendar-info-day .calendar-day-ul li {
+        position: relative;
+        padding: 6px 0;
+    }
+
+    #modifyCalendar .modify-calendar-info .calendar-info-day .calendar-day-ul p.day-ul-today {
+        font-size: 14px;
+        text-align: center;
+        margin: 0 auto;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 50%;
+    }
+
+    #modifyCalendar .modify-calendar-info .calendar-info-day .calendar-day-ul .day-ul-today-font {
+        font-size: 11px;
+        position: absolute;
+        bottom: -6px;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+    #modifyCalendar .modify-calendar-info .calendar-info-day .calendar-day-ul .day-ul-before p {
+        color: #999;
+    }
+
+    #modifyCalendar .modify-calendar-info .calendar-info-day .calendar-day-ul .day-ul-select p {
+        background: #319BF7;
+        color: #fff;
+    }
+
+    #modifyCalendar .modify-calendar-info .calendar-info-day .calendar-day-ul .day-ul-include p {
+        background: rgba(49, 155, 247, 0.5);
+        color: #fff;
+    }
+
+    #modifyCalendar .modify-calendar-info .calendar-info-day .calendar-day-ul .day-ul-include.day-ul-includeFirst:before,
+    #modifyCalendar .modify-calendar-info .calendar-info-day .calendar-day-ul .day-ul-include.day-ul-includeLast:before {
+        position: absolute;
+        content: '';
+        width: 50%;
+        height: 30px;
+        background: rgba(49, 155, 247, 0.5);
+    }
+
+    #modifyCalendar .modify-calendar-info .calendar-info-day .calendar-day-ul .day-ul-include.day-ul-includeFirst:before {
+        right: 0;
+    }
+
+    #modifyCalendar .modify-calendar-info .calendar-info-day .calendar-day-ul .day-ul-include.day-ul-includeLast:before {
+        left: 0;
+    }
+
+    #modifyCalendar .modify-calendar-info .calendar-info-day .calendar-day-ul .day-ul-include.day-ul-includeFirst p.day-ul-today,
+    #modifyCalendar .modify-calendar-info .calendar-info-day .calendar-day-ul .day-ul-include.day-ul-includeLast p.day-ul-today {
+        background: #319BF7;
+        width: 30px;
+        border-radius: 50%;
+        z-index: 20;
+        position: absolute;
+        left: 50%;
+        margin-left: -15px;
+    }
+
+    #modifyCalendar .modify-calendar-info .calendar-info-day .calendar-day-ul .day-ul-include p.day-ul-today {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .color319 {
+        color: #319bf7;
+    }
+
+    /*幻影 pointer-events: none;*/
+    .modifyCalendar_pointerEvents {
+        position: fixed;
+        bottom: 100px;
+        width: 100%;
+        height: 41px;
+        pointer-events: none;
+        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+        background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0) 100%);
+        background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0) 100%);
+    }
+
+    /*======日历calendarCtrl   modifyCalendar  End======*/
